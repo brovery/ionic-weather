@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/app.css">
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 
     <script src="lib/js/ionic.bundle.js"></script>
     <script src="lib/js/angular/angular-resource.js"></script>
@@ -27,14 +27,14 @@
       <background-cycler class="bg-fade"></background-cycler>
 
       <ion-header-bar id="header" class="bar bar-header bar-clear">
-        <h1 class="title">
-          <span class="city"><i id="city-nav-icon" class="icon ion-navigate"></i> {{currentLocationString}}</span><br>
-          <current-time localtz="current.local_tz_short"></current-time>
-        </h1>
-        <button ng-click="showSettings()" class="button button-icon"><i class="icon ion-gear-a"></i></button>
+        <!--<h1 class="title">-->
+          <!--&lt;!&ndash;<span class="city"><i id="city-nav-icon" class="icon ion-navigate"></i> {{currentLocationString}}</span><br>&ndash;&gt;-->
+          <!--&lt;!&ndash;<current-time localtz="current.local_tz_short"></current-time>&ndash;&gt;-->
+        <!--</h1>-->
+        <!--<button ng-click="showSettings()" class="button button-icon"><i class="icon ion-gear-a"></i></button>-->
       </ion-header-bar>
 
-      <ion-content scroll-event-interval="20" scroll-effects scrollbar-y="false" class="no-header">
+      <ion-content scroll-event-interval="20" scroll-effects="" scrollbar-y="false" class="no-header">
         <ion-refresher on-refresh="refreshData()"></ion-refresher>
         <div id="main-content">
           <current-weather></current-weather>
